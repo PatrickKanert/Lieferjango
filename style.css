@@ -1,0 +1,475 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: "Noto Sans", sans-serif;
+}
+
+h2 {
+	margin: 0;
+}
+
+h3 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	font-size: 16px;
+}
+
+a {
+	color: black;
+	margin: 0;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.d-none {
+	display: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24px;
+}
+
+.header-logo-img {
+	width: 160px;
+}
+
+.header-title {
+	font-weight: 700;
+}
+
+.header-menu-img {
+	width: 24px;
+	cursor: pointer;
+}
+
+.main-container {
+	display: flex;
+	justify-content: center;
+}
+
+.menu-container {
+	display: flex;
+	width: 1920px;
+}
+
+.menu {
+	display: flex;
+}
+
+.menu-img {
+	background-image: url("./img/Pizza.jpg");
+	background-size: cover;
+	background-position: center center;
+	height: 200px;
+	width: 100%;
+}
+
+.h2-basket {
+	margin-top: 24px;
+}
+
+.basket {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: white;
+	height: 100%;
+	box-shadow: -1px -1px 4px 1px #aaa;
+}
+
+.basket-delivery {
+	align-items: center;
+	display: flex;
+	background: #EFEDEA;
+	margin-top: 16px;
+	border-radius: 50px;
+	padding: 4px;
+}
+
+.basket-delivery-time-left {
+	display: flex;
+	align-items: center;
+	margin-right: 32px;
+	background: white;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px 0px #aaa;
+	cursor: pointer;
+	padding: 0 16px 0 16px;
+}
+
+.basket-delivery-time-right {
+	display: flex;
+	align-items: center;
+	padding: 0 16px 0 16px;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.provider {
+	padding: 16px 32px 0px 32px;
+	box-shadow: 0px 1px 4px 0px #aaa;
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	text-decoration: underline;
+	margin: 8px 0px 8px 8px;
+}
+
+.rating-star {
+	width: 16px;
+	margin-right: 8px;
+}
+
+.icon {
+	width: 24px;
+	cursor: pointer;
+}
+
+.delivery {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+	margin: 8px 0px 8px 8px;
+}
+
+.delivery-selection {
+	margin-left: 16px;
+}
+
+.categories-container {
+	display: flex;
+	flex-direction: row;
+	margin-top: 32px;
+	font-size: 16px;
+	gap: 32px;
+}
+
+.categories {
+	padding: 8px;
+	border-radius: 50px;
+}
+
+.categories:hover {
+	background-color: #EFEDEA;
+	cursor: pointer;
+}
+
+.left {
+	width: 70%;
+}
+
+.right {
+	width: 30%;
+	height: 100vh;
+	position: sticky;
+	top: 0;
+}
+
+.dishes {
+	background-color: #FCFCFC;
+	margin-top: 5px;
+}
+
+.categorie-pizza {
+	padding: 16px 32px;
+}
+
+.pizzas {
+	border: 2px solid #dbd9d7;
+	border-radius: 21px;
+	padding: 8px;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.plus-icon {
+	width: 24px;
+	margin: 8px;
+}
+
+.plus-icon:hover {
+	cursor: pointer;
+}
+
+.basket-selected {
+	width: 100%;
+}
+
+.selected-food {
+	width: 100%;
+	margin-top: 32px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 40px;
+}
+
+.plus-minus-container {
+	align-items: center;
+	display: flex;
+	margin-top: 16px;
+	justify-content: end;
+	gap: 24px;
+	margin-right: 24px;
+	box-shadow: 16px 32px 0px -11px #EFEDEA;
+}
+
+.plus-minus-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.totalprice {
+	margin-top: 64px;
+}
+
+.prices {
+	display: flex;
+	justify-content: space-between;
+	padding: 3px 24px;
+}
+
+.fill-basket {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 80px 40px;
+}
+
+.fill-basket p {
+	text-align: center;
+}
+
+.description {
+	margin-left: 8px;
+}
+
+.min-order {
+	text-align: center;
+}
+
+.min-order p {
+	background-color: lightgoldenrodyellow;
+	padding: 8px;
+	margin: 16px;
+	border-radius: 16px;
+}
+
+footer {
+	height: 100px;
+	background-color: #EFEDEA;
+}
+
+.footer-container {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 16px;
+}
+
+.footer-container p {
+	font-size: 12px;
+}
+
+.footer-container p:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.copyright {
+	display: flex;
+	justify-content: center;
+	align-items: baseline;
+	padding-top: 40px;
+}
+
+.copyright p {
+	font-size: 12px;
+}
+
+.pay {
+	display: flex;
+	justify-content: center;
+	padding: 16px;
+}
+
+.pay-button {
+	width: 100%;
+	height: 50px;
+	font-size: 20px;
+	color: #ffffff;
+	background: #F36805;
+	border: none;
+	border-radius: 25px;
+	font-family: arial;
+	transition: all 0.25s ease;
+}
+
+.pay-button:hover {
+	color: #ffffff;
+	background: #e26105;
+	border-color: none;
+	cursor: pointer;
+}
+
+.basket-delivery-responsive {
+	align-items: center;
+	display: flex;
+	background: #EFEDEA;
+	margin-top: 16px;
+	border-radius: 50px;
+	padding: 4px;
+	width: max-content;
+}
+
+.basket-delivery-responsive-left {
+	display: flex;
+	align-items: center;
+	margin-right: 32px;
+	background: white;
+	border-radius: 50px;
+	box-shadow: 0px 0px 5px 0px #aaa;
+	cursor: pointer;
+	padding: 0 16px 0 16px;
+}
+
+.basket-delivery-responsive-right {
+	display: flex;
+	align-items: center;
+	padding: 0 16px 0 16px;
+	justify-content: center;
+	cursor: pointer;
+}
+
+
+.open-basket {
+	background-color: white;
+	position: sticky;
+	bottom: 0px;
+	display: flex;
+}
+
+
+.burger-menu {
+	position: fixed;
+	top: 200px;
+	background-color: white;
+	height: 500px;
+	width: 390px;
+	border: 2px solid rgba(0, 0, 0, 0.1);
+	border-radius: 15px;
+}
+
+.burger-menu-headline {
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.close-burger-menu:hover {
+	cursor: pointer;
+}
+
+.login-container {
+	font-size: 14px;
+	display: flex;
+    justify-content: space-between;
+	padding: 0px 16px 16px 16px;
+}
+
+.login {
+	padding: 16px;
+    background-color: #EFEDEA;
+    border-radius: 25px;
+}
+
+.login:hover {
+	cursor: pointer;
+	background-color: #e6e3de;
+}
+
+.create-account{
+	color: white;
+	padding: 16px;
+    background-color: #F36805;
+    border-radius: 25px;
+}
+
+.create-account:hover {
+	cursor: pointer;
+	background-color: #e26105;
+}
+
+.menu-categories {
+	padding: 16px;
+}
+
+.menu-categories:hover {
+	cursor: pointer;
+	background-color: #EFEDEA;
+}
+
+@media (max-width: 1200px) {
+	.basket-delivery {
+		display: none;
+	}
+}
+
+@media (max-width: 1000px) {
+	.right {
+		display: none;
+	}
+
+	.left {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.footer-container {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.header-title {
+		display: none;
+	}
+
+	.basket-delivery-responsive {
+		display: none;
+	}
+
+	.burger-menu {
+		width: 290px;
+	}
+}
+
+
+@media (min-width: 1199px) {
+	.basket-delivery-responsive {
+		display: none;
+	}
+}
+
+@media (min-width: 1000px) {
+	.open-basket {
+		display: none;
+	}
+}

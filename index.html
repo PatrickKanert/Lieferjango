@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferjango</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./js/script.js"></script>
+    <script src="./js/json.js"></script>
+    <link rel="icon" type="image/png" href="./img/fav-icon.png">
+    <link rel="stylesheet" href="./fonts.css">
+</head>
+
+<body onload="render()">
+
+    <header id="header">
+        <img class="header-logo-img" src="./img/logo-new.png" alt="">
+        <p class="header-title">Speisekarte</p>
+        <img onclick="openBurgerMenu()" class="header-menu-img" src="./img/bars-solid.svg" alt="">
+    </header>
+
+    <div class="main-container">
+            <div class="burger-menu d-none" id="burgerMenu">
+                <div class="burger-menu-headline">
+                    <h3>Mein Account</h3>
+                    <div onclick="closeBurgerMenu()" class="close-burger-menu">
+                        <h3>X</h3>
+                    </div>
+                </div>
+                <div class="login-container">
+                    <div class="login">Anmelden</div>
+                    <div class="create-account">Account erstellen</div>   
+                </div>
+                <div class="menu-categories">Bestellung</div>
+                <div class="menu-categories">Favoriten</div>
+                <div class="menu-categories">Punkt</div>
+                <div class="menu-categories">Stempelkarte</div>
+                <div class="menu-categories">Geschenkkarten</div>
+            </div>
+        
+        <div id="left" class="left">
+            <div class="menu-img"></div>
+            <div class="provider">
+                <h2 style="margin-left: 8px;">Pizza Bella Pistazie</h2>
+                <div class="rating">
+                    <img class="rating-star" src="./img/star.png" alt="">
+                    <p><b>4.8</b> (899)</p>
+                </div>
+                <div class="delivery">
+                    <span>
+                        <img class="icon" src="./img/shoppingbag.png" alt="">
+                    </span>
+                    <span>
+                        <p>min. 25€</p>
+                    </span>
+                    <span>
+                        |
+                    </span>
+                    <span>
+                        <img class="icon" src="./img/bicycle.png" alt="">
+                    </span>
+                    <p>kostenlos</p>
+                </div>
+                <div>
+                    <p class="description">Ab einer Bestellung von 40 Euro, erhalten Sie ein alkoholfreies Getränk 0,33l
+                        Gratis.<br>
+                        Bei Selbstabholung erhalten Sie 10% Rabatt! (auser auf Angebote)</p>
+                </div>
+                <div class="basket-delivery-responsive">
+                    <div class="basket-delivery-responsive-left">
+                        <img class="icon" src="./img/bicycle.png" alt="">
+                        <span class="delivery-selection">
+                            <b>Lieferung</b>
+                            <br>
+                            <p>30-45min</p>
+                        </span>
+
+                    </div>
+                    <div class="basket-delivery-responsive-right">
+                        <img class="icon" src="./img/paket.png" alt="">
+                        <span class="delivery-selection">
+                            <b>Abholung</b>
+                            <br>
+                            <p>15-25min</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="categories-container">
+                    <div class="categories">
+                        Beliebt
+                    </div>
+                    <div class="categories">
+                        Salat
+                    </div>
+                    <div class="categories">
+                        Pizza
+                    </div>
+                </div>
+            </div>
+            <div class="dishes" id="dishes"></div>
+        </div>
+
+        <div id="right" class="right">
+            <aside class="basket">
+                <h2 class="h2-basket">Warenkorb</h2>
+                <div id="basketDelivery" class="basket-delivery">
+                    <div class="basket-delivery-time-left">
+                        <img class="icon" src="./img/bicycle.png" alt="">
+                        <span class="delivery-selection">
+                            <b>Lieferung</b>
+                            <br>
+                            <p>30-45min</p>
+                        </span>
+                    </div>
+                    <div class="basket-delivery-time-right">
+                        <img class="icon" src="./img/paket.png" alt="">
+                        <span class="delivery-selection">
+                            <b>Abholung</b>
+                            <br>
+                            <p>15-25min</p>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="fillBasket" class="fill-basket">
+                    <img src="./img/shoppingbag.png" alt="">
+                    <h2 style="text-align: center;">Fülle deinen Warenkorb</h2>
+                    <p>Füge einige leckere Gerichte aus der Speisekarte hinzu und bestelle dein Essen.</p>
+                </div>
+
+                <div id="basketSelected" class="basket-selected">
+
+                </div>
+
+
+            </aside>
+
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer-container">
+            <a href="#">AGB</a>
+            <a href="#">Datenschutzerklärung</a>
+            <a href="#">Impressum</a>
+            <a href="#">Verwendung von Cookies</a>
+        </div>
+        <div class="copyright">
+            <p>© 2024 Pizzarambo</p>
+        </div>
+    </footer>
+
+    <div id="basketContainer">
+
+    </div>
+
+    <div class="open-basket">
+        <button  id="basketButton" onclick="openBasket()" class="pay-button">Warenkorb</button>
+        <button id="closeBasket" onclick="closeBasket()" class="pay-button d-none">X</button>
+    </div>
+
+</body>
+
+</html>
