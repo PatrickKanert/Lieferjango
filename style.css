@@ -88,6 +88,9 @@ header {
 	background: white;
 	height: 100%;
 	box-shadow: -1px -1px 4px 1px #aaa;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: justify;
 }
 
 .basket-delivery {
@@ -319,6 +322,7 @@ footer {
 	border-radius: 25px;
 	font-family: arial;
 	transition: all 0.25s ease;
+	margin: 0px 32px;
 }
 
 .pay-button:hover {
@@ -359,7 +363,6 @@ footer {
 
 
 .open-basket {
-	background-color: white;
 	position: sticky;
 	bottom: 0px;
 	display: flex;
@@ -426,13 +429,21 @@ footer {
 	background-color: #EFEDEA;
 }
 
+/* .scroll {
+	padding: 4px;
+	height: 100vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	text-align: justify;
+} */
+
 @media (max-width: 1200px) {
 	.basket-delivery {
 		display: none;
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
 	.right {
 		display: none;
 	}
